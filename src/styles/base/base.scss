@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px
+  // font-family: "Poppins", sans-serif;
+  font-family: var(--font);
+  color: var(--color-text-light);
+
+  // @include respond(1500) {
+  //   font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  // }
+  // @include respond(600) {
+  //   font-size: 37.5%; // 1rem = 6px, 6/16 = 37.5%
+  // }
+}
