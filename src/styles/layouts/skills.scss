@@ -1,3 +1,94 @@
 .skills {
-  border: 1px solid red;
+  padding: 28rem 0;
+  gap: 6rem;
+
+  background-image: url('../../../public/waves/wave-below--ps.svg'), url('../../../public/waves/wave-above--st.svg');
+  background-size: 100% 10rem;
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-light);
+  display: flex;
+  flex-direction: column;
+
+  &__collection {
+    display: flex;
+    // gap: -20rem;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__grid {
+    // border: 1px solid red;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-auto-rows: 10rem;
+    grid-gap: 4rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    // overflow: hidden;
+    // width: 11rem;
+    display: flex;
+    border: 5px solid transparent;
+    border-radius: var(--border-radius);
+    // border: 1px solid red;
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+    &--frontend:hover {
+      border-color: var(--color-primary);
+      background-color: var(--color-primary);
+    }
+    &--backend:hover {
+      border-color: var(--color-tertiary);
+      background-color: var(--color-tertiary);
+    }
+    &--tools:hover {
+      border-color: var(--color-quadratiary);
+      background-color: var(--color-quadratiary);
+    }
+    &:hover > .skills__icon {
+      border-color: transparent;
+      fill: black;
+      color: black;
+    }
+
+    &:hover > .skills__name {
+      opacity: 1;
+      // transform: translateY(-1rem);
+    }
+  }
+
+  &__icon {
+    padding: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid white;
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease-in;
+  }
+
+  &__name {
+    color: var(--color-text-light);
+    padding: 1rem;
+    opacity: 0;
+    transition: all 0.2s ease-in;
+  }
 }

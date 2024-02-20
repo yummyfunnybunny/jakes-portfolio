@@ -1,4 +1,24 @@
 :root {
   --font: 'Poppins', sans-serif;
-  --color-text-light: white;
+  --color-text-light: #eeeeee;
+  --color-text-dark: #000000;
+  --color-text-dim: #727272;
+  --color-primary: #7fc767;
+  --color-secondary: #f78e69;
+  --color-tertiary: #00a1e4;
+  --color-quadratiary: #dc0073;
+  --border-radius: 10px;
+  --border-radius--inner: 6px;
+
+  // BG Squares
+  --bgs-transition: all 0.5s ease-in;
+  --bgs-border: 1px solid;
+  --bgs-translate-x: 0;
+  --bgs-translate-y: -2rem;
+  --bgs-radius: 25%;
+  --bgs-bg-col: hsl(0, 0%, 0%);
+  --bgs-border-size: 1px;
+  --bgs-border-type: solid;
+  // --bgs-border-col: hsl(293, 95%, 71%);
+  --bgs-border-col: hsl(0, 0%, 0%);
 }

@@ -1,25 +1,44 @@
-.squares {
+.bg-squares {
+  background-color: black;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
   z-index: -1;
-}
-.squares__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+
+  // overlay &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: rgba(0, 0, 0, 0.5);
+  //   z-index: 1;
+  // }
 }
 
-.squares__grid {
-  position: absolute;
+.bg-squares__overlay {
+  position: fixed;
+  // border: 1px solid red;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: black;
+  height: 100vh;
+  z-index: -1;
+  // background-color: rgba(0, 0, 0, 0.25);
+}
+
+// cells
+td {
+  border-radius: var(--border-radius);
+  border: var(--bgs-border-size) var(--bgs-border-type) var(--bgs-border-col);
+  transition: var(--bgs-transition);
+}
+
+// hovering cells
+.td-hover {
+  transform: translate(var(--bgs-translate-x), var(--bgs-translate-y));
+  border-radius: var(--bgs-radius);
+  background: var(--bgs-bg-col);
+  border: var(--bgs-border-size) var(--bgs-border-type) var(--bgs-border-col);
 }

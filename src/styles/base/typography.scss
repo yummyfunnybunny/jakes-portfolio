@@ -1,0 +1,33 @@
+.section__title {
+  font-size: 6rem;
+  align-self: center;
+}
+
+.section__subtitle {
+  font-size: 3rem;
+}
+
+.section__text {
+  font-size: 2rem;
+}
+
+.section__highlight {
+  display: block;
+
+  padding: 1rem 3rem;
+  margin: 2rem;
+  // width: auto;
+  align-self: center;
+  font-size: 3rem;
+  border-radius: var(--border-radius);
+
+  &--light {
+    background-color: var(--color-text-dark);
+    color: var(--color-text-light);
+  }
+
+  &--dark {
+    background-color: var(--color-text-light);
+    color: var(--color-text-dark);
+  }
+}

@@ -1,3 +1,30 @@
 .footer {
-  border: 1px solid red;
+  // border: 1px solid red;
+  height: 25vh;
+  // background-color: #eeeeee;
+  background-image: linear-gradient(to right, var(--color-tertiary), var(--color-quadratiary));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  color: var(--color-text-dark);
+
+  &__links {
+    display: flex;
+    gap: 8rem;
+  }
+  &__icon {
+    font-size: 8rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    transition: background-color, color, ease-in 0.25s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-text-dark);
+      color: var(--color-text-light);
+    }
+  }
 }

@@ -1,3 +1,273 @@
 .timeline {
-  border: 1px solid red;
+  padding: 28rem 0;
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-rows: min-content max-content min-content;
+  grid-template-columns: 100%;
+  grid-gap: 6rem;
+  justify-items: center;
+
+  background-image: url('../../../public/waves/wave-below--st.svg'), url('../../../public/waves/wave-above--tq.svg');
+  background-size: 100% 10rem;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+
+  color: var(--color-text-light);
+
+  position: relative;
+
+  @supports (perspective: 0) or (-moz-perspective: 0) {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+  }
+
+  &__graph {
+    width: 50%;
+    display: grid;
+    grid-auto-rows: 36rem;
+    // grid-template-rows: repeat(7, 36rem);
+    grid-template-columns: 1fr;
+    justify-content: center;
+    position: relative;
+
+    // @include respond(1500) {
+    //   width: 60%;
+    // }
+    // @include respond(1200) {
+    //   width: 70%;
+    // }
+    // @include respond(900) {
+    //   width: 80%;
+    // }
+  }
+}
+
+.bulb {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--color-text-light);
+  transition: all 0.2s ease-in;
+
+  // opacity: 0.5;
+
+  // even bulb
+  &:nth-child(even) {
+    border-right: 5px solid var(--color-text-dim);
+  }
+
+  // odd bulb
+  &:nth-child(odd) {
+    border-left: 5px solid var(--color-text-dim);
+  }
+
+  // not last bulb
+  &:not(:last-child) {
+    border-bottom: 5px solid var(--color-text-dim);
+  }
+
+  // icon
+  &__icon {
+    position: absolute;
+    top: 50%;
+    // font-size: 6rem;
+    width: 8rem;
+    height: 8rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--color-text-dim);
+    background-color: var(--color-text-dark);
+    border-radius: var(--border-radius);
+    transition: all 0.2s ease-in;
+    color: var(--color-text-dim);
+    // opacity: 0.5;
+  }
+
+  // odd icon
+  &:nth-child(odd) > &__icon {
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  // even icon
+  &:nth-child(even) > &__icon {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+
+  // bulb content
+  &__content {
+    // background-color: var(--col-grey-black);
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-gap: 1rem;
+    padding: 2rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 75%;
+    height: 75%;
+    border: 5px solid var(--color-text-dark);
+    transition: all 0.2s ease-in;
+    border-radius: var(--border-radius);
+
+    // bulb content text
+    & > * {
+      transition: all 0.2s ease-in;
+      opacity: 0;
+    }
+
+    // bulb content hover
+    &:hover > * {
+      opacity: 1;
+    }
+
+    // bulb content overlay
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-clip: content-box;
+      opacity: 0.75;
+      transition: all 0.2s ease-in;
+    }
+
+    // Background images
+    &--1::before {
+      background-image: url('../../../public/timeline/timeline-uwf.jpg');
+      border-radius: 5px;
+    }
+    &--2::before {
+      background-image: url('../../../public/timeline/timeline-fieldcore.jpg');
+      background-position: right;
+      border-radius: 5px;
+    }
+    &--3::before {
+      background-image: url('../../../public/timeline/timeline-eaton.jpg');
+      background-position: center;
+      border-radius: 5px;
+    }
+    &--4::before {
+      background-image: url('../../../public/timeline/timeline-self-taught.jpg');
+      background-position: center;
+      border-radius: 5px;
+    }
+    &--5::before {
+      background-image: url('../../../public/timeline/timeline-ardent.jpg');
+      background-position: center;
+      border-radius: 5px;
+    }
+    &--6::before {
+      background-image: url('../../../public/timeline/timeline-devmountain.jpg');
+      background-position: center;
+      border-radius: 5px;
+    }
+
+    // @include respond(900) {
+    //   padding: 1rem;
+    // }
+  }
+
+  // Title Text
+  &__title {
+    line-height: 5rem;
+    position: relative;
+    font-size: 4rem;
+    text-align: center;
+
+    // Title separator
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 25%;
+      height: 5px;
+      background-color: var(--color-text-light);
+      transition: all 0.2s ease-in;
+    }
+  }
+
+  &__description {
+    padding: 0 1rem;
+    transition: all 0.2s ease-in;
+    line-height: 1.25;
+    z-index: 1;
+  }
+  &__date {
+    padding-bottom: 1;
+    z-index: 1;
+  }
+
+  // hover over the bulb
+  &:hover {
+    border-color: var(--color-text-light);
+
+    // bulb icon effect on hover
+    & > * {
+      border-color: var(--color-text-light);
+      color: var(--color-text-light);
+    }
+
+    // move odd bulbs slightly to the right on over
+    &:nth-child(odd) > .bulb__content {
+      transform: translateX(0.5rem);
+    }
+
+    // move even bulb slightly to the left on hover
+    &:nth-child(even) > .bulb__content {
+      transform: translateX(-0.5rem);
+    }
+
+    // background overlay hover
+    & > .bulb__content::before {
+      opacity: 1;
+      filter: brightness(0);
+    }
+
+    // title separator on hover
+    & > .bulb__content > .bulb__title::before {
+      // background-color: var(--color-text-light);
+    }
+  }
+
+  @media only screen and (hover: none) {
+    &:nth-child(odd) {
+      // border-left-color: var(--color-text-dark);
+      // border-bottom-color: var(--color-text-dark);
+    }
+    &:nth-child(even) {
+      // border-right-color: var(--color-text-dark);
+      // border-bottom-color: var(--color-text-dark);
+    }
+    & > * {
+      // border-color: var(--color-text-dark);
+      // color: var(--color-text-light);
+    }
+    &:nth-child(odd) > .bulb__content {
+      // transform: translateX(0.5rem);
+    }
+    &:nth-child(even) > .bulb__content {
+      // transform: translateX(-0.5rem);
+    }
+    & > .bulb__content::before {
+      // opacity: 1;
+      // filter: brightness(0.25);
+    }
+    & > .bulb__content > .bulb__title::before {
+      // background-color: var(--color-text-light);
+    }
+  }
 }

@@ -20,3 +20,58 @@ html {
   //   font-size: 37.5%; // 1rem = 6px, 6/16 = 37.5%
   // }
 }
+
+.section {
+  // border: 1px solid red;
+  padding: 8rem 0;
+  // margin: 8rem 0;
+}
+
+.btn {
+  border-style: solid;
+  border-radius: var(--border-radius--inner);
+  background-color: var(--color-text-dark);
+  border: 5px solid var(--color-text-light);
+  transition: all 0.2s ease-in;
+
+  &--sm {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    border-width: 2px;
+  }
+
+  &--md {
+  }
+
+  &--lg {
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-0.25rem);
+  }
+  &--primary:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+  &--secondary:hover {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary);
+  }
+  &--tertiary:hover {
+    background-color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+  }
+  &--quadratiary:hover {
+    background-color: var(--color-quadratiary);
+    border-color: var(--color-quadratiary);
+  }
+
+  &--light {
+    color: var(--color-text-light);
+  }
+
+  &--dark {
+    color: var(--color-text-dark);
+  }
+}
