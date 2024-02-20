@@ -100,6 +100,9 @@ function Timeline() {
           <FontAwesomeIcon className='bulb__icon' icon={faSchool} />
         </div>
       </div>
+      <a href='/'>
+        <button className='btn btn--light btn--primary btn--lg'>See My LinkedIn</button>
+      </a>
     </div>
   );
 }

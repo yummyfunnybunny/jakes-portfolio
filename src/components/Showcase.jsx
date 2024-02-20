@@ -40,7 +40,7 @@ function Showcase() {
                 <button className='btn btn--light btn--secondary btn--sm'>Demo</button>
               </a>
               <a href='/'>
-                <button className='btn btn--light btn--quadratiary btn--sm'>Video</button>
+                <button className='btn btn--light btn--tertiary btn--sm'>Video</button>
               </a>
             </div>
           </div>
@@ -60,7 +60,7 @@ function Showcase() {
                 <button className='btn btn--light btn--secondary btn--sm'>Demo</button>
               </a>
               <a href='/'>
-                <button className='btn btn--light btn--quadratiary btn--sm'>Video</button>
+                <button className='btn btn--light btn--tertiary btn--sm'>Video</button>
               </a>
             </div>
           </div>
@@ -80,12 +80,15 @@ function Showcase() {
                 <button className='btn btn--light btn--secondary btn--sm'>Demo</button>
               </a>
               <a href='/'>
-                <button className='btn btn--light btn--quadratiary btn--sm'>Video</button>
+                <button className='btn btn--light btn--tertiary btn--sm'>Video</button>
               </a>
             </div>
           </div>
         </a>
       </div>
+      <a href='/'>
+        <button className='btn btn--light btn--quadratiary btn--lg'>See My Github</button>
+      </a>
     </div>
   );
 }

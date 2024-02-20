@@ -29,21 +29,29 @@ html {
 
 .btn {
   border-style: solid;
-  border-radius: var(--border-radius--inner);
   background-color: var(--color-text-dark);
   border: 5px solid var(--color-text-light);
   transition: all 0.2s ease-in;
 
   &--sm {
+    border-radius: var(--border-radius--inner);
     padding: 0.5rem 1rem;
     font-size: 2rem;
     border-width: 2px;
   }
 
   &--md {
+    border-radius: var(--border-radius);
+    font-size: 3rem;
+    padding: 0.75rem 1.5rem;
+    border-width: 3px;
   }
 
   &--lg {
+    border-radius: var(--border-radius);
+    font-size: 4rem;
+    padding: 1rem 2rem;
+    border-width: 4px;
   }
 
   &:hover {
