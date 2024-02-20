@@ -1,7 +1,7 @@
 .about {
   // height: 50vh;
-  background-color: #eeeeee;
-  background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  background-color: var(--color-primary);
+  // background-image: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   display: flex;
   justify-content: center;
   align-items: center;
