@@ -2,7 +2,8 @@
   // border: 1px solid red;
   height: 25vh;
   // background-color: var(--color-tertiary);
-  background-image: linear-gradient(to right, var(--color-tertiary), var(--color-quadratiary));
+  // background-image: linear-gradient(to right, var(--color-tertiary), var(--color-quadratiary));
+  background-image: linear-gradient(to right, var(--color-bg-blue), var(--color-bg-red));
 
   display: flex;
   flex-direction: column;

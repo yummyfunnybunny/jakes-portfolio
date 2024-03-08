@@ -2,7 +2,7 @@
   padding: 28rem 0;
   gap: 6rem;
 
-  background-image: url('../../../public/waves/wave-below--ps.svg'), url('../../../public/waves/wave-above--st.svg');
+  background-image: url('../../../public/waves/wave-below--g-o.svg'), url('../../../public/waves/wave-above--y-p.svg');
   // background-image: url('../../../public/waves/wave-below--p.svg'), url('../../../public/waves/wave-above--s.svg');
   background-size: 100% 10rem;
   background-repeat: no-repeat;
@@ -53,17 +53,31 @@
     &:hover {
       transform: translateY(-1rem);
     }
-    &--frontend:hover {
-      border-color: var(--color-primary);
-      background-color: var(--color-primary);
+    &--frontend:nth-child(odd):hover {
+      border-color: var(--color-bg-green);
+      background-color: var(--color-bg-green);
     }
-    &--backend:hover {
-      border-color: var(--color-tertiary);
-      background-color: var(--color-tertiary);
+    &--frontend:nth-child(even):hover {
+      border-color: var(--color-bg-orange);
+      background-color: var(--color-bg-orange);
     }
-    &--tools:hover {
-      border-color: var(--color-quadratiary);
-      background-color: var(--color-quadratiary);
+    &--backend:nth-child(odd):hover {
+      border-color: var(--color-bg-yellow);
+      background-color: var(--color-bg-yellow);
+    }
+
+    &--backend:nth-child(even):hover {
+      border-color: var(--color-bg-purple);
+      background-color: var(--color-bg-purple);
+    }
+    &--tools:nth-child(odd):hover {
+      border-color: var(--color-bg-blue);
+      background-color: var(--color-bg-blue);
+    }
+
+    &--tools:nth-child(even):hover {
+      border-color: var(--color-bg-red);
+      background-color: var(--color-bg-red);
     }
     &:hover > .skills__icon {
       border-color: transparent;

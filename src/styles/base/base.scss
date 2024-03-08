@@ -57,23 +57,26 @@ html {
   &:hover {
     cursor: pointer;
     transform: translateY(-0.25rem);
+    background-color: var(--color-text-light);
+    border-color: var(--color-text-dark);
+    color: var(--color-text-dark);
   }
-  &--primary:hover {
-    background-color: var(--color-primary);
-    border-color: var(--color-primary);
-  }
-  &--secondary:hover {
-    background-color: var(--color-secondary);
-    border-color: var(--color-secondary);
-  }
-  &--tertiary:hover {
-    background-color: var(--color-tertiary);
-    border-color: var(--color-tertiary);
-  }
-  &--quadratiary:hover {
-    background-color: var(--color-quadratiary);
-    border-color: var(--color-quadratiary);
-  }
+  // &--primary:hover {
+  //   background-color: var(--color-primary);
+  //   border-color: var(--color-primary);
+  // }
+  // &--secondary:hover {
+  //   background-color: var(--color-secondary);
+  //   border-color: var(--color-secondary);
+  // }
+  // &--tertiary:hover {
+  //   background-color: var(--color-tertiary);
+  //   border-color: var(--color-tertiary);
+  // }
+  // &--quadratiary:hover {
+  //   background-color: var(--color-quadratiary);
+  //   border-color: var(--color-quadratiary);
+  // }
 
   &--light {
     color: var(--color-text-light);
