@@ -18,7 +18,9 @@ function Hero() {
       </div>
       <div className='hero__right'>
         <div className='hero__portrait'>
-          <img className='hero__img' src='hero/hero-portrait.jpg' />
+          <div className='hero__img' />
+          {/* <img className='hero__img' src='hero/hero-portrait.jpg' alt='image of jake' /> */}
+          {/* <img className='hero__img' src='hero/hero-portrait.jpg' alt='image of jake' /> */}
         </div>
       </div>
     </div>

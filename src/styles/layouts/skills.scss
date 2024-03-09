@@ -36,6 +36,7 @@
   }
 
   &__item {
+    // padding: 1rem;
     display: flex;
     align-items: center;
     transition: all 0.2s ease-in;
@@ -98,6 +99,69 @@
     border: 5px solid white;
     border-radius: var(--border-radius);
     transition: all 0.2s ease-in;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--javascript {
+      background-image: url('../../../public/skills/icons8-javascript.svg');
+    }
+    &--react {
+      background-image: url('../../../public/skills/icons8-react.svg');
+    }
+    &--sass {
+      background-image: url('../../../public/skills/icons8-sass.svg');
+    }
+    &--bootstrap {
+      background-image: url('../../../public/skills/icons8-bootstrap.svg');
+    }
+    &--css3 {
+      background-image: url('../../../public/skills/icons8-css3.svg');
+    }
+    &--html5 {
+      background-image: url('../../../public/skills/icons8-html5.svg');
+    }
+    &--mui {
+      background-image: url('../../../public/skills/material-ui-seeklogo.svg');
+    }
+    &--nodejs {
+      background-image: url('../../../public/skills/icons8-nodejs.svg');
+    }
+    &--mongodb {
+      background-image: url('../../../public/skills/icons8-mongodb.svg');
+    }
+    &--mongoose {
+      background-image: url('../../../public/skills/icons8-mongoose.svg');
+    }
+    &--postgresql {
+      background-image: url('../../../public/skills/icons8-postgresql.svg');
+    }
+    &--sequelize {
+      background-image: url('../../../public/skills/sequelize-seeklogo-white.svg');
+    }
+    &--stripe {
+      background-image: url('../../../public/skills/icons8-stripe.svg');
+    }
+    &--mailchimp {
+      background-image: url('../../../public/skills/icons8-mailchimp.svg');
+    }
+    &--mapbox {
+      background-image: url('../../../public/skills/mapbox.svg');
+    }
+    &--sendgrid {
+      background-image: url('../../../public/skills/sendgrid-seeklogo.svg');
+    }
+    &--heroku {
+      background-image: url('../../../public/skills/icons8-heroku.svg');
+    }
+    &--figma {
+      background-image: url('../../../public/skills/icons8-figma.svg');
+    }
+    &--jira {
+      background-image: url('../../../public/skills/icons8-jira.svg');
+    }
+    &--mailgun {
+      background-image: url('../../../public/skills/mailgun-seeklogo.svg');
+    }
   }
 
   &__name {

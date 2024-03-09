@@ -71,7 +71,7 @@
     z-index: 1;
   }
 
-  &__portrait::before {
+  &__portrait::after {
     content: '';
     position: absolute;
     top: 3rem;
@@ -80,12 +80,14 @@
     height: 100%;
     border: 0.5rem solid var(--color-text-light);
     border-radius: var(--border-radius);
-    z-index: -1;
+    z-index: -2;
   }
 
   &__img {
     width: 40rem;
     border-radius: var(--border-radius);
     border: 1px solid #292929;
+    background-image: url('../../../public/hero/hero-portrait.jpg');
+    background-size: cover;
   }
 }

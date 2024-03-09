@@ -3,7 +3,8 @@ function About() {
     <div className='section about'>
       <div className='about__left'>
         <div className='about__portrait'>
-          <img className='about__img' src='about/about-2.jpg' />
+          {/* <img className='about__img' src='about/about-2.jpg' /> */}
+          <div className='about__img' />
         </div>
       </div>
       <div className='about__right'>
