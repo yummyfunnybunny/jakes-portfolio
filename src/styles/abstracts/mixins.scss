@@ -1,0 +1,33 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == 600 {
+    @media only screen and (max-width: 37.5em) {
+      // phone
+      @content;
+    }
+  }
+  @if $breakpoint == 900 {
+    @media only screen and (max-width: 56.25em) {
+      // tablet-portrait
+      @content;
+    }
+  }
+  @if $breakpoint == 1100 {
+    @media only screen and (max-width: 68.75em) {
+      // tablet-landscape
+      @content;
+    }
+  }
+
+  @if $breakpoint == 1200 {
+    @media only screen and (max-width: 75em) {
+      // tablet-landscape
+      @content;
+    }
+  }
+  @if $breakpoint == 1500 {
+    @media only screen and (max-width: 93.75em) {
+      // big-desktop
+      @content;
+    }
+  }
+}

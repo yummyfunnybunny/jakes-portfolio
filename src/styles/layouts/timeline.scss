@@ -32,15 +32,15 @@
     justify-content: center;
     position: relative;
 
-    // @include respond(1500) {
-    //   width: 60%;
-    // }
-    // @include respond(1200) {
-    //   width: 70%;
-    // }
-    // @include respond(900) {
-    //   width: 80%;
-    // }
+    @include respond(1500) {
+      width: 60%;
+    }
+    @include respond(1200) {
+      width: 70%;
+    }
+    @include respond(900) {
+      width: 80%;
+    }
   }
 }
 
@@ -195,7 +195,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 25%;
-      height: 5px;
+      height: 0.25rem;
       background-color: var(--color-text-light);
       transition: all 0.2s ease-in;
     }

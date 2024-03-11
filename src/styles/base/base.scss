@@ -13,12 +13,15 @@ html {
   font-family: var(--font);
   color: var(--color-text-light);
 
-  // @include respond(1500) {
-  //   font-size: 50%; // 1rem = 8px, 8/16 = 50%
-  // }
-  // @include respond(600) {
-  //   font-size: 37.5%; // 1rem = 6px, 6/16 = 37.5%
-  // }
+  @include respond(1500) {
+    font-size: 50%; // 1rem = 8px, 8/16 = 50%
+  }
+  @include respond(900) {
+    font-size: 43.75%; // 1rem = 7px, 7/16 = 43.75%
+  }
+  @include respond(600) {
+    font-size: 37.5%; // 1rem = 6px, 6/16 = 37.5%
+  }
 }
 
 .section {
