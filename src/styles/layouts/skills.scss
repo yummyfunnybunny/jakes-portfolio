@@ -17,13 +17,16 @@
 
   &__collection {
     display: grid;
-    grid-template-areas: 'frontend backend tools';
+    // grid-template-areas: 'frontend backend tools';
+    grid-template-areas:
+      'frontend backend'
+      'tools tools';
 
-    @include respond(1500) {
-      grid-template-areas:
-        'frontend backend'
-        'tools tools';
-    }
+    // @include respond(1500) {
+    //   grid-template-areas:
+    //     'frontend backend'
+    //     'tools tools';
+    // }
     @include respond(1200) {
       grid-template-areas:
         'frontend'

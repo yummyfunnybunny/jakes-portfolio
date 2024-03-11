@@ -21,6 +21,7 @@
     padding: 1rem;
     border-radius: var(--border-radius);
     transition: background-color, color, ease-in 0.25s;
+    color: black;
 
     &:hover {
       cursor: pointer;

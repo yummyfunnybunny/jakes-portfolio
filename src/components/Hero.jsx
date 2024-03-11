@@ -10,9 +10,15 @@ function Hero() {
           <h1 className='hero__title'>I'm Jake</h1>
           <h3 className='hero__subtitle'>Software | Logistics | Customer Service</h3>
           <div className='hero__links'>
-            <FontAwesomeIcon className='hero__icon' icon={faGithub} />
-            <FontAwesomeIcon className='hero__icon' icon={faLinkedin} />
-            <FontAwesomeIcon className='hero__icon' icon={faEnvelope} />
+            <a href='https://github.com/yummyfunnybunny' target='blank'>
+              <FontAwesomeIcon className='hero__icon' icon={faGithub} />
+            </a>
+            <a href='https://www.linkedin.com/in/jake-nichols-6a54b822a/' target='blank'>
+              <FontAwesomeIcon className='hero__icon' icon={faLinkedin} />
+            </a>
+            <a href='mailto:jake.thomas.nichols@gmail.com' target='blank'>
+              <FontAwesomeIcon className='hero__icon' icon={faEnvelope} />
+            </a>
           </div>
         </div>
       </div>

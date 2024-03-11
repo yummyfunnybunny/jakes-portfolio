@@ -100,7 +100,7 @@ function Timeline() {
           <FontAwesomeIcon className='bulb__icon' icon={faSchool} />
         </div>
       </div>
-      <a href='/'>
+      <a href='https://www.linkedin.com/in/jake-nichols-6a54b822a/' target='blank'>
         <button className='btn btn--light btn--primary btn--lg'>See My LinkedIn</button>
       </a>
     </div>

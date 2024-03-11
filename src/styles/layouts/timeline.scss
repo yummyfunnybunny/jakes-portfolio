@@ -55,7 +55,10 @@
   color: var(--color-text-light);
   transition: all 0.2s ease-in;
 
-  // opacity: 0.5;
+  // bulb content hover
+  &:hover > .bulb__content > * {
+    opacity: 1;
+  }
 
   // even bulb
   &:nth-child(even) {
@@ -126,11 +129,6 @@
       opacity: 0;
     }
 
-    // bulb content hover
-    &:hover > * {
-      opacity: 1;
-    }
-
     // bulb content overlay
     &::before {
       content: '';
@@ -174,10 +172,6 @@
       background-position: center;
       border-radius: 5px;
     }
-
-    // @include respond(900) {
-    //   padding: 1rem;
-    // }
   }
 
   // Title Text

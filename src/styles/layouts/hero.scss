@@ -53,6 +53,7 @@
     padding: 1rem;
     border-radius: var(--border-radius);
     transition: background-color, color, ease-in 0.25s;
+    color: white;
     &:hover {
       cursor: pointer;
       background-color: var(--color-text-light);
