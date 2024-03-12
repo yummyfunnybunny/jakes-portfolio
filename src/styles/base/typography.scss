@@ -14,12 +14,13 @@
 .section__highlight {
   display: block;
 
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
+  line-height: 4rem;
   margin: 2rem;
-  // width: auto;
   align-self: center;
   font-size: 3rem;
   border-radius: var(--border-radius);
+  text-align: center;
 
   &--light {
     background-color: var(--color-text-dark);

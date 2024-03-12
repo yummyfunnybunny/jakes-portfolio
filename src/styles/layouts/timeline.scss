@@ -123,6 +123,10 @@
     transition: all 0.2s ease-in;
     border-radius: var(--border-radius);
 
+    @include respond(900) {
+      height: 30rem;
+    }
+
     // bulb content text
     & > * {
       transition: all 0.2s ease-in;
