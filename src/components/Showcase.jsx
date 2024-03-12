@@ -4,7 +4,7 @@ function Showcase() {
       <h1 className='section__title'>SHOWCASE</h1>
       <div className='showcase__grid'>
         {/* Project 1 */}
-        <a className='cell' href='/'>
+        <div className='cell'>
           <div className='cell__img cell__img--1'></div>
           <div className='cell__info'>
             <h2 className='section__subtitle'>uPlow</h2>
@@ -27,10 +27,10 @@ function Showcase() {
               </a>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Project 2 */}
-        <a className='cell'>
+        <div className='cell'>
           <div className='cell__img cell__img--2'></div>
           <div className='cell__info'>
             <h2 className='section__subtitle'>Trail Tribe</h2>
@@ -53,10 +53,10 @@ function Showcase() {
               </a>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Project 3 */}
-        <a className='cell'>
+        <div className='cell'>
           <div className='cell__img cell__img--3'></div>
           <div className='cell__info'>
             <h2 className='section__subtitle'>Natours</h2>
@@ -79,10 +79,10 @@ function Showcase() {
               </a>
             </div>
           </div>
-        </a>
+        </div>
 
         {/* Project 4 */}
-        <a className='cell'>
+        <div className='cell'>
           <div className='cell__img cell__img--4'></div>
           <div className='cell__info'>
             <h2 className='section__subtitle'>Forkify</h2>
@@ -104,7 +104,7 @@ function Showcase() {
               </a>
             </div>
           </div>
-        </a>
+        </div>
       </div>
       <a href='https://github.com/yummyfunnybunny' target='blank'>
         <button className='btn btn--light btn--quadratiary btn--lg'>See My Github</button>

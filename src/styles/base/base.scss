@@ -22,6 +22,9 @@ html {
   @include respond(600) {
     font-size: 37.5%; // 1rem = 6px, 6/16 = 37.5%
   }
+  @include respond(450) {
+    font-size: 31.25%; // 1rem = 4px, 5/16 = 31.25%
+  }
 }
 
 a {
