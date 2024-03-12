@@ -38,13 +38,16 @@
     }
     @include respond(1200) {
       width: 70%;
+      border: 5px solid green;
     }
     @include respond(900) {
       width: 80%;
+      border: 5px solid purple;
     }
     @include respond(450) {
       width: 85%;
       grid-auto-rows: 40rem;
+      border: 5px solid blue;
     }
   }
 }
