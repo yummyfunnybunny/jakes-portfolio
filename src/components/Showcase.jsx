@@ -15,16 +15,16 @@ function Showcase() {
             <div className='cell__buttons'>
               {/* <a href='/'>
                 <button className='btn btn--light btn--primary btn--sm'>Details</button>
-              </a>
-              <a href='/'>
+              </a> */}
+              <a href='http://18.223.185.32/uplow/' target='blank'>
                 <button className='btn btn--light btn--secondary btn--sm'>Demo</button>
               </a>
-              <a href='/'>
+              {/* <a href='/'>
                 <button className='btn btn--light btn--quadratiary btn--sm'>Video</button>
               </a> */}
-              <a>
+              {/* <a>
                 <button className='btn btn--light btn--tertiary btn--sm'>Live Demo Coming Soon</button>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
